@@ -1,0 +1,13 @@
+.DS_Store
+._*
+.env
+.env.*
+!.env.example
+node_modules/
+*.zip
+*.log
+*.patch
+backups/
+outputs/
+migration-backup-20260711/
+src/legacy-confirmation-bounds.json

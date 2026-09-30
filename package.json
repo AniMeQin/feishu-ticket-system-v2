@@ -1,0 +1,17 @@
+{
+  "name": "feishu-ticket-system-lite",
+  "version": "1.1.13",
+  "private": true,
+  "description": "Lean Feishu IT ticket workflow for Tencent Cloud SCF.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "check": "node --check app.js && node --check src/server.js && node --check src/ticket-service.js && node --check src/domain.js && node --check src/feishu.js && node --check src/repository.js && node --check src/cards.js && node --check src/time.js && node --check src/config.js",
+    "zip": "zip -r -FS feishu-ticket-system-lite.zip app.js package.json scf_bootstrap src docs -x '*.DS_Store' '*/._*'"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}
